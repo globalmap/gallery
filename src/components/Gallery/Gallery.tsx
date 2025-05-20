@@ -6,7 +6,7 @@ const Gallery = () => {
 
   return (
     <main className={s.container}>
-      <h1>Photo Gallery</h1>
+      <h1>Image Gallery</h1>
 
       <div className={s.gallery}>
         {images.map((image, index) => (

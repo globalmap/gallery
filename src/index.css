@@ -19,7 +19,7 @@
   display: grid;
   grid-template-columns:
     [sidebar-start]
-    5rem
+    0
     [sidebar-end main-start]
     1fr
     [main-end];
