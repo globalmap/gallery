@@ -1,12 +1,15 @@
+import { useModal } from "../../hooks/useModal";
 
 interface GalleryImageProps {
   src: string;
   description?: string;
 }
 
-const GalleryImage: React.FC<GalleryImageProps> = ({src, description}) => {
+const GalleryImage: React.FC<GalleryImageProps> = ({ src, description }) => {
+  const { openModal } = useModal();
+
   return (
-    <figure>
+    <figure onClick={() => openModal({type: "image", payload: {src}})}>
       <img src={src} alt='Lorem ipsum dolor sit amet' />
       {description && (
         <figcaption>

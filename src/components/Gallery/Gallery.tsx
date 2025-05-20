@@ -9,8 +9,8 @@ const Gallery = () => {
       <h1>Photo Gallery</h1>
 
       <div className={s.gallery}>
-        {images.map((image) => (
-          <GalleryImage src={image.src} />
+        {images.map((image, index) => (
+          <GalleryImage key={index} src={image.src} />
         ))}
       </div>
     </main>
