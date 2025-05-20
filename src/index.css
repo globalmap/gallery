@@ -1,0 +1,40 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #070707;
+  background: #dfe4e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
+  min-block-size: 100svh;
+
+  display: grid;
+  grid-template-columns:
+    [sidebar-start]
+    5rem
+    [sidebar-end main-start]
+    1fr
+    [main-end];
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.5;
+  margin-block-end: 1rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  line-height: 1.5;
+}
